@@ -3,46 +3,57 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Learning HTML</title>
+  <title>HTML Forms</title>
 </head>
 
 <body>
-  <div>
-    <p>Hello, <strong>humans!</strong></p>
-    <p><strong>Not </strong>my <small>first </small>web <em>page!</em></p>
-    <a href="https://www.google.lk">Google</a>
-    <br>
-    <a href="about.html">About Page</a>
-  </div>
+  <h1>HTML Forms</h1>
 
-  <div>
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <h4>Heading 4</h4>
-    <h5>Heading 5</h5>
-    <h6>Heading 6</h6>
-  </div>
+  <form>
+    <label for="username">Enter username: </label>
+    <input type="text" id="username" name="username" placeholder="Username" required>
 
-  <div>
-    <ul>
-      <li>Smurf</li>
-      <li>Poppy</li>
-    </ul>
-  </div>
+    <br><br>
 
-  <!-- Span tag -->
-  <span>I <br> am a span</span>
+    <label for="email">Enter email: </label>
+    <input type="email" id="email" name="email" placeholder="Your email" required>
 
-  <hr>
+    <br><br>
 
-  <img src="img/Poppy.png" alt="An image of Poppy" height="200">
+    <label for="password">Enter password: </label>
+    <input type="password" id="password" name="password" placeholder="Choose a password" required>
 
-  <blockquote cite="http://www.oscarwildesite.com">
-    We are all in the gutter, but some of us are looking at the stars
-  </blockquote>
+    <p>Select your age: </p>
+    <input type="radio" name="age" value="0-25" id="option-1">
+    <label for="option-1">0-25</label>
+    <input type="radio" name="age" value="26-50" id="option-2">
+    <label for="option-2">26-50</label>
+    <input type="radio" name="age" value="51+" id="option-3">
+    <label for="option-3">51+</label>
 
-  <p style="color: green;">style me :)</p>
+    <br><br>
+
+    <label for="question">Security question: </label>
+    <select name="question" id="question">
+      <option value="q1">What colour are your favourite pair of socks?</option>
+      <option value="q2">If you could be a vegetable, what would it be?</option>
+      <option value="q3">What is your best ever security question?</option>
+    </select>
+
+    <br><br>
+
+    <label for="answer">Security question answer: </label>
+    <input type="text" id="answer" name="answer">
+
+    <br><br>
+
+    <label for="bio">Your bio: </label><br>
+    <textarea name="bio" id="bio" rows="8" cols="80" placeholder="About you..."></textarea>
+
+    <br><br>
+
+    <input type="submit" value="Submit the form">
+  </form>
 </body>
 
 </html>
