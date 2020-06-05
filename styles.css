@@ -32,16 +32,17 @@ header h1 {
 }
 
 .banner .welcome {
-  background-color: #E6711E;
-  color: black;
+  /* background-color: #E6711E; */
+  background-image: linear-gradient(to bottom left, #D3301D, #F2771A);
+  color: white;
   padding: 30px;
   position: absolute;
   right: 0;
-  top: 40%;
+  top: 41%;
 }
 
 .banner h2 {
-  font-size: 74px;
+  font-size: 65px;
 }
 
 .banner h2 span {
@@ -64,7 +65,6 @@ nav ul {
 nav li {
   width: 25%;
   display: inline-block;
-  ;
   font-size: 24px;
 }
 
@@ -103,7 +103,7 @@ article p {
 
 .images li {
   display: inline-block;
-  width: 40%;
+  width: 25%;
   margin: 20px 1%;
 }
 
@@ -136,4 +136,40 @@ footer {
   color: white;
   font-weight: bold;
   text-align: center;
+}
+
+/* Pseudo Classes */
+nav li a:hover {
+  text-decoration: underline;
+}
+
+.images li:hover {
+  position: relative;
+  top: -4px;
+}
+
+form input:focus {
+  border: 4px dashed #4B4B4B;
+  outline: none;
+}
+
+form input:valid {
+  border: 4px dashed #71D300;
+}
+
+article p::first-line {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+section.join p::first-letter {
+  font-size: 1.3em;
+}
+
+p::selection {
+  background-color: #FECF21;
+}
+
+p::after {
+  content: '...'
 }
