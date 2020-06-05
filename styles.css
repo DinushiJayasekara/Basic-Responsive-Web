@@ -32,7 +32,6 @@ header h1 {
 }
 
 .banner .welcome {
-  /* background-color: #E6711E; */
   background-image: linear-gradient(to bottom left, #D3301D, #F2771A);
   color: white;
   padding: 30px;
@@ -134,13 +133,12 @@ footer {
   background: #FECF21;
   padding: 10px;
   color: white;
-  font-weight: bold;
   text-align: center;
 }
 
 /* Pseudo Classes */
 nav li a:hover {
-  text-decoration: underline;
+  color: #F63232;
 }
 
 .images li:hover {
@@ -172,4 +170,87 @@ p::selection {
 
 p::after {
   content: '...'
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1400px) {
+  .banner .welcome h2 {
+    font-size: 60px;
+  }
+
+  nav li {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .banner .welcome h2 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .banner .welcome h2 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .banner .welcome h2 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .banner .welcome h2 {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .banner .welcome {
+    position: relative;
+    text-align: center;
+    padding: 14px;
+  }
+
+  .banner .welcome br {
+    display: none;
+  }
+
+  .banner .welcome h2 {
+    font-size: 24px;
+  }
+
+  .banner .welcome span {
+    font-size: 1em;
+  }
+
+  .images li {
+    width: 100%;
+    margin: 20px auto;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  nav li {
+    font-size: 20px;
+    display: block;
+    width: 100%;
+    margin: 12px 0;
+  }
+
+  header {
+    position: relative;
+    padding: 15px 0;
+  }
+
+  nav {
+    top: 0;
+  }
+
+  .join form input {
+    font-size: 10px;
+  }
 }
